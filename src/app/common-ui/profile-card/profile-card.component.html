@@ -1,0 +1,77 @@
+@if (profile) {
+<div class="profile-card">
+  <div class="avatar-box">
+    <div class="avatar">
+      <img
+        class="avatar"
+        src="../../../assets/images/avatar.png"
+        alt="avatar"
+      />
+    </div>
+    <div class="right">
+      <p class="name">
+        {{ profile.firstName && profile.firstName }}
+        {{ profile.lastName && profile.lastName }}
+      </p>
+      <p class="username">{{ profile.username && profile.username }}</p>
+    </div>
+  </div>
+  <div class="message-box">
+    <p class="message">
+      {{ profile.description && profile.description }}
+    </p>
+  </div>
+  <div class="skills-box">
+    <div class="skill skill-active">JS</div>
+    <div class="skill skill-active">CSS</div>
+    <div class="skill">HTML</div>
+    <!-- <div class="skill">{{ profile.stack }}</div> -->
+  </div>
+  <div class="buttons-box">
+    <button type="button" class="button-narrow button-add">
+      <svg
+        width="13"
+        height="12"
+        viewBox="0 0 13 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.3125 11.6562L6 9.34375L6.9375 8.40625L8.3125 9.78125L11.7188 6.34375L12.6562 7.28125L8.3125 11.6562ZM7.21875 5.21875C6.69792 5.73958 6.07292 6 5.34375 6C4.61458 6 3.97917 5.73958 3.4375 5.21875C2.91667 4.69792 2.65625 4.07292 2.65625 3.34375C2.65625 2.61458 2.91667 1.98958 3.4375 1.46875C3.97917 0.927083 4.61458 0.65625 5.34375 0.65625C6.07292 0.65625 6.69792 0.927083 7.21875 1.46875C7.73958 1.98958 8 2.61458 8 3.34375C8 4.07292 7.73958 4.69792 7.21875 5.21875ZM4 9.34375L6 11.3438H0V10C0 9.20833 0.604167 8.57292 1.8125 8.09375C3.04167 7.59375 4.21875 7.34375 5.34375 7.34375C5.65625 7.34375 5.875 7.35417 6 7.375L4 9.34375Z"
+          fill="#AE7AFF"
+        />
+      </svg>
+    </button>
+    <button type="button" class="button-wide button-send">
+      <span>Написать</span>
+      <svg
+        width="15"
+        height="12"
+        viewBox="0 0 15 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.34375 12V7.34375L10.3438 6L0.34375 4.65625V0L14.3438 6L0.34375 12Z"
+          fill="black"
+        />
+      </svg>
+    </button>
+    <button type="button" class="button-narrow button-share">
+      <svg
+        width="11"
+        height="11"
+        viewBox="0 0 11 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 0.34375H10.6562V7H9.34375V2.59375L1.59375 10.3438L0.65625 9.40625L8.40625 1.65625H4V0.34375Z"
+          fill="black"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
+} @else { }

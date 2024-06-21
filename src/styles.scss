@@ -1,0 +1,56 @@
+:root {
+  --primary-color: rgb(174, 122, 255);
+  --primary-hover-color: rgb(153, 91, 254);
+  --primary-soft-color: rgb(210, 182, 255);
+  --secondary-yellow-color: #fae8a4;
+  --secondary-yellow-soft-color: #fff6d4;
+  --secondary-red-color: #e99898;
+  --secondary-red-soft-color: #ebc8c8;
+  --secondary-green-color: #98e9ab;
+  --secondary-green-soft-color: #c6e6ce;
+
+  --dark-primary-color: #000;
+  --dark-secondary-color: rgba(0, 0, 0, 0.75);
+}
+
+@font-face {
+  font-family: "RobotoFlex";
+  font-display: swap;
+  src: url("./assets/fonts/RobotoFlex-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  font-display: swap;
+  src: url("./assets/fonts/JetBrainsMono-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrainsMono";
+  font-display: swap;
+  src: url("./assets/fonts/JetBrainsMono-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  color: var(--hover-primary-color);
+  background-color: var(--dark-primary-color);
+  font-family: "RobotoFlex", sans-serif;
+  font-size: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
