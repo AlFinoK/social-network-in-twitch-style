@@ -2,11 +2,7 @@
 <div class="profile-card">
   <div class="avatar-box">
     <div class="avatar">
-      <img
-        class="avatar"
-        src="../../../assets/images/avatar.png"
-        alt="avatar"
-      />
+      <img class="avatar" [src]="profile.avatarUrl | imgUrl" alt="avatar" />
     </div>
     <div class="right">
       <p class="name">
@@ -22,13 +18,18 @@
     </p>
   </div>
   <div class="skills-box">
-    <div class="skill skill-active">JS</div>
-    <div class="skill skill-active">CSS</div>
-    <div class="skill">HTML</div>
+    @for (skill of profile.stack; track skill) {
+
+    <div class="skill skill-active">
+      {{ firstWordUppercase(skill) }}
+    </div>
+    }
+    <!-- <div class="skill skill-active">CSS</div>
+    <div class="skill">HTML</div> -->
     <!-- <div class="skill">{{ profile.stack }}</div> -->
   </div>
   <div class="buttons-box">
-    <button type="button" class="button-narrow button-add">
+    <button type="button" class="button button-add">
       <svg
         width="13"
         height="12"
@@ -42,7 +43,7 @@
         />
       </svg>
     </button>
-    <button type="button" class="button-wide button-send">
+    <button type="button" class="button button-send">
       <span>Написать</span>
       <svg
         width="15"
@@ -57,7 +58,7 @@
         />
       </svg>
     </button>
-    <button type="button" class="button-narrow button-share">
+    <button type="button" class="button button-share">
       <svg
         width="11"
         height="11"

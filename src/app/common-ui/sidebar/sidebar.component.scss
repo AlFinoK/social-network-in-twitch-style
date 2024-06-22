@@ -1,0 +1,168 @@
+:host {
+  min-height: 100vh;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.sidebar-container {
+  padding: 20px 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 74px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 8px;
+  svg path {
+    fill: var(--light-primary-color);
+  }
+  &:hover {
+    color: var(--primary-color);
+    background-color: var(--dark-secondary-color);
+    svg path {
+      fill: var(--primary-color);
+    }
+  }
+}
+
+.link-notification {
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification {
+  padding: 1px 10px;
+  background-color: var(--primary-color);
+}
+
+.quantity {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--dark-primary-color);
+}
+
+.search {
+  display: flex;
+  input {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: var(--light-primary-color);
+    font-weight: 700;
+    line-height: 24px;
+    outline: none;
+
+    &::placeholder {
+      color: var(--light-primary-color);
+    }
+  }
+  &:hover {
+    input {
+      &::placeholder {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.subs {
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__title {
+    color: var(--gray-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
+
+.all-subs-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  span {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+  svg path {
+    fill: var(--primary-color);
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
